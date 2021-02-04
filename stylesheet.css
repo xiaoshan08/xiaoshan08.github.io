@@ -71,18 +71,14 @@ a {
 header {
   height: 65px;
   width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  /* positionプロパティをfixedに、topを0に指定してください */
+  background-color: rgba(34, 38, 52, 0.7);
   position: fixed;
   top: 0;
-  
-  /* z-indexを10に指定してください */
   z-index: 10;
 }
 
 .logo {
-  width: 124px;
-  margin-top: 20px;
+  height: 65px;
 }
 
 .header-left {
@@ -132,11 +128,12 @@ header {
   position: relative;
 }
 
-.lesson-icon p {
+.lesson-icon a {
   position: absolute;
   top: 90px;
   width: 100%;
   color: white;
+  display: block;
 }
 
 .txt-contents {
@@ -171,7 +168,7 @@ header {
 }
 
 footer img {
-  width: 125px;
+  height: 65px;
 }
 
 footer p {
