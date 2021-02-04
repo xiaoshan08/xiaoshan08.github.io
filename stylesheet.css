@@ -1,13 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
 }
 
 a {
   text-decoration: none;
 }
 
+.clear {
+  clear: left;
+}
+
 .container {
+  max-width: 1170px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -46,11 +55,11 @@ a {
 .facebook {
   background-color: #3b5998;
   margin-right: 10px;
-}
+  }
 
 .twitter {
   background-color: #55acee;
-}
+  }
 
 .btn {
   padding: 8px 24px;
@@ -58,20 +67,21 @@ a {
   display: inline-block;
   opacity: 0.8;
   border-radius: 4px;
+  text-align: center;
 }
 
 .btn:hover {
   opacity: 1;
 }
 
-.fa {
+.fab {
   margin-right: 5px;
 }
 
 header {
   height: 65px;
   width: 100%;
-  background-color: rgba(34, 38, 52, 0.7);
+  background-color: rgba(34, 38, 52, 0.9);
   position: fixed;
   top: 0;
   z-index: 10;
@@ -102,8 +112,15 @@ header {
   display: block;
 }
 
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
 .lesson-wrapper {
-  height: 500px;
   padding-bottom: 80px;
   background-color: #f7f7f7;
   text-align: center;
@@ -130,7 +147,7 @@ header {
 
 .lesson-icon a {
   position: absolute;
-  top: 90px;
+  top: 44%;
   width: 100%;
   color: white;
   display: block;
