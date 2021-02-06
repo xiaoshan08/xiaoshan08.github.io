@@ -16,6 +16,8 @@
     .heading h2 {
       font-size: 20px;
     }
+
+
   }
   
 
@@ -51,5 +53,9 @@
   
     .top-wrapper p {
       font-size: 14px;
+    }
+    
+    .btn-wrapper p {
+      text-align: center
     }
   }
