@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+  
+li {
+  list-style: none;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  color: #808488;
+}
+
+.under {
+  text-decoration: underline;
+}
+
+.header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+}
+
+.header-left {
+  float: left;
+  width: 120px;
+}
+
+.logo {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  display: block;
+  height: 65px;
+  float: left;
+  color: white;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.top-image {
+  width: 100%;
+}
+
+.about-wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-title h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.self-image {
+  float: left;
+  width: 30%;
+  padding-left: 50px;
+  margin-right: 100px;
+}
+
+.about-text-clear {
+  clear: left;
+}
+
+.self-image img {
+  border-radius: 200px;
+  width: 100%;
+}
+
+.self-text h2 {
+  padding-bottom: 20px;
+}
+
+.contents-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.content {
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.content img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.contents-clear {
+  clear: left;
+}
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #808488;
+}
