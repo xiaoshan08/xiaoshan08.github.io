@@ -1,0 +1,34 @@
+@media (max-width: 670px) {
+  body {
+    background: none;
+  }
+
+  header, .main-wrapper, footer {
+    width: 100%;
+  }
+
+  .header-title {
+    text-align: center;
+  }
+
+  .header-title img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .header-link ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .side {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+    padding-left: 1rem;
+  }
+
+}
