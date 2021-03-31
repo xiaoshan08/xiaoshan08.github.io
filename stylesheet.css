@@ -1,0 +1,431 @@
+/*     ↓ 共通部分 ↓     */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Meiryo UI", "MS P Gothic", sans-serif;
+  margin: 0;
+  background-color: #f6f6f6;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+}
+
+ul li a {
+  color: #333333;
+}
+
+.contents-title {
+  background: -moz-linear-gradient(top, #9be2e0 0%, #6dc7c5 100%);
+  background: -webkit-linear-gradient(top, #9be2e0 0%, #6dc7c5 100%);
+  background: linear-gradient(to bottom, #9be2e0 0%, #6dc7c5 100%);
+  color: #ffffff;
+  font-size: 2.0rem;
+  letter-spacing: 0.3rem;
+  padding: 3rem 1rem;
+  border-radius: 5px;
+}
+
+.title {
+  padding: 1.5rem 1rem;
+  border-bottom: 2px solid #6cc6c4;
+  font-size: 1.8rem;
+  color: #333333;
+  margin: 1rem 0;
+}
+
+.sub-title {
+  color: #6cc6c4;
+  font-size: 1.5rem;
+  padding: 1.5rem 1rem;
+}
+
+/*     ↑ 共通部分 ↑     */
+
+header, .main-wrapper, footer {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.header-top {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top-left img {
+  display: block;
+  width: 250px;
+}
+
+.header-top-right {
+  color: #333333;
+}
+
+.header-top-right p {
+  padding: 1rem 0;
+  letter-spacing: 0.5px;
+  font-size: 1.2rem;
+}
+
+.header-top-right h2 {
+  background: url(img/tel.png) left center no-repeat;
+  font-size: 2.6rem;
+  padding-left: 4rem;
+  font-weight: 100;
+  text-align: right;
+}
+
+.header-top-right span {
+  color: red;
+}
+
+.header-link {
+  height: 70px;
+}
+
+.header-link ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.header-link ul li {
+  width: 20%;
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
+  border-radius: 3px;
+  border-top: 1px solid #6cc6c4;
+  border-bottom: 1px solid #6cc6c4;
+  border-right: 1px solid #71C9C7;
+  border-left: 1px solid #99E1DF;
+  background: -moz-linear-gradient(top, #9be2e0 0%, #6dc7c5 100%);
+  background: -webkit-linear-gradient(top, #9be2e0 0%, #6dc7c5 100%);
+  background: linear-gradient(to bottom, #9be2e0 0%, #6dc7c5 100%);
+  display: block;
+  padding: 16px 0;
+}
+
+.header-link ul li:hover {
+  display: block;
+  background: -moz-linear-gradient(bottom, #9be2e0 0%, #6dc7c5 100%);
+  background: -webkit-linear-gradient(bottom, #9be2e0 0%, #6dc7c5 100%);
+  background: linear-gradient(to top, #9be2e0 0%, #6dc7c5 100%);
+}
+
+.header-link ul li a {
+  color: #ffffff;
+}
+
+.header-link ul li a:hover {
+  color: #c1fffd;
+}
+
+.main-wrapper {
+  background-color: white;
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+  display: flex;
+}
+
+.side {
+  width: 25%;
+  padding-bottom: 1rem;
+}
+
+.side-contents {
+  border: 1px solid #7fd2d0;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.side-contents h2 {
+  background: -moz-linear-gradient(top, #9be2e0 0%, #6dc7c5 100%);
+  background: -webkit-linear-gradient(top, #9be2e0 0%, #6dc7c5 100%);
+  background: linear-gradient(to bottom, #9be2e0 0%, #6dc7c5 100%);
+  color: #ffffff;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  padding: 1.5rem 1rem;
+  font-weight: bold;
+}
+
+.side-contents ul {
+  margin-bottom: 1rem;
+}
+
+.side-contents ul li {
+  border-bottom: 1px solid #7fd2d0;
+  font-size: 1.4rem;
+  padding: 1rem 0 1rem 2rem;
+  margin: 1rem 1rem;
+  position: relative;
+}
+
+.side-contents ul li:hover {
+  opacity: 0.6;
+}
+
+.side-contents ul li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 1.5rem;
+  left: 0.5rem;
+  width: 7px;
+  height: 7px;
+  background-color: #7fd2d0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.main {
+  width: 75%;
+  padding-left: 1rem;
+}
+
+.main-img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.main-img img {
+  width: 100%;
+}
+
+.main-new-info {
+  padding: 1rem 3rem 1rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.main-new-info h1 {
+  border-bottom: 2px solid #7fd2d0;
+  color: #333333;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  padding: 0 0 1rem 1rem;
+}
+
+.table-box {
+  text-align: left;
+  padding-top: 0.5rem;
+}
+
+.table-box tr th {
+  border-bottom: 0.3px dotted #888888;
+  padding: 1rem 0 1rem 2rem;
+  font-size: 1.4rem;
+  color: #333333;
+  font-weight: lighter;
+}
+
+.table-box-date {
+  width: 15rem;
+}
+
+.footer-link {
+  background-color: #6CC6C4;
+  border-radius: 5px;
+}
+
+.footer-link ul {
+  display: flex;
+  padding-left: 1rem;
+}
+
+.footer-link ul li {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #ffffff;
+  letter-spacing: 0.4rem;
+  padding: 1rem 0 1rem 2rem;
+  margin: 0 1rem;
+  position: relative;
+}
+
+.footer-link ul li:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background: url(img/list-style-disc.png) left center no-repeat;
+  width: 2rem;
+  height: 2rem;
+  top: 1rem;
+  left: -0.5rem;
+  background-size: contain;
+}
+
+.footer-link ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-link ul li a {
+  color: #ffffff;
+}
+
+.footer-clinic {
+  border-bottom: 2px solid #7fd2d0;
+  padding: 1.5rem 0;
+  color: #333333;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.footer-clinic p {
+  display: inline-block;
+}
+
+.footer-clinic-bold {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding: 1rem;
+  color: #333333;
+}
+
+/*     ↓ clinic部分 ↓     */
+
+.main-clinic {
+  padding-right: 3rem;
+}
+
+.main-clinic p {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+.main-clinic-businessHour table {
+  width: 100%;
+  border: 1px solid #c1c1c1;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.table-top {
+  background: #d1d1d1;
+  margin: 0;
+}
+
+.main-clinic-businessHour table th {
+  border: 1px solid #c1c1c1;
+  padding: 1.6rem;
+  color: #333333;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+/*     ↑ clinic部分 ↑     */
+
+/*     ↓ service部分 ↓     */
+
+.main-service {
+  padding-right: 3rem;
+}
+
+.main-service-general p, .main-service-beauty p {
+  color: #333333;
+  font-size: 1.4rem;
+  line-height: 2;
+  padding-left: 1rem;
+}
+
+/*     ↑ service部分 ↑     */
+
+/*     ↓ staff部分 ↓     */
+
+.main-staff {
+  padding-right: 3rem;
+}
+
+.main-staff-contents-manager {
+  display: flex;
+}
+
+.manager-left {
+  width: 45%;
+}
+
+.manager-left img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.manager-left p {
+  background-color: #7fd2d0;
+  color: #ffffff;
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.manager-right p {
+  padding-left: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.manager-greeting p {
+  padding-left: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.main-staff-contents p {
+  padding-left: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+/*     ↑ staff部分 ↑     */
+
+/*     ↓ access部分 ↓     */
+
+.main-access {
+  padding-right: 3rem;
+}
+
+.main-access-map {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #7fd2d0;
+}
+
+.main-access-address {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.main-access-address-right p {
+  padding-left: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+
+/*     ↑ access部分 ↑     */
+
+
