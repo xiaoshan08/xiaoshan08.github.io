@@ -15,7 +15,7 @@
   
   .header-top-left-left img {
     display: block;
-    width: 40%;
+    width: 30%;
   }
   
   .header-top-left-right ul {
@@ -63,7 +63,7 @@
   }
   
   .greeting-first h2, .greeting-second h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   
   .greeting-main {
@@ -73,7 +73,7 @@
   .greeting-main p {
     font-size: 1.6rem;
     margin-left: 1rem;
-    line-height: 1.4;
+    line-height: 1.2;
   }
 
   .contents-item1 {
