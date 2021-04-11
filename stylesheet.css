@@ -65,27 +65,26 @@ li {
 .header-top-right {
   background-color: rgba(224, 209, 0, 0.7);
   margin-top: 1rem;
-  padding-left: 40px;
-  position: relative;
   display: flex;
   align-items: center;
 }
 
-.header-top-right:before {
+.header-top-right h1 {
+  font-size: 2.4rem;
+  padding: 0.5rem 1rem 0.5rem 4rem;
+  position: relative;
+}
+
+.header-top-right h1:before {
   content: "";
   display: block;
   position: absolute;
   width: 30px;
   height: 30px;
-  left: 10px;
+  left: 5px;
   background-image: url(img/calendar.png);
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-.header-top-right h1 {
-  font-size: 2.4rem;
-  padding: 0.5rem 1rem;
 }
 
 .header-title {
