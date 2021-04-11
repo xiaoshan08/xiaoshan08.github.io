@@ -8,9 +8,34 @@
     display: block;
   }
 
+  .header-top-left {
+    display: flex;
+    justify-content:space-between;
+  }
+  
   .header-top-left-left img {
     display: block;
-    width: 160px;
+    width: 40%;
+  }
+  
+  .header-top-left-right ul {
+    display: flex;
+    padding-left: 0;
+  }
+  
+  .header-top-left-right ul li {
+    padding-top: 1.6rem;
+    margin-right: 0;
+    margin-left: 30px;
+  }
+  
+  .header-top-left-right ul li a {
+    margin-right: 0;
+  }
+
+  .header-top-left-left img {
+    display: block;
+    width: 100%;
   }
 
   .header-top-right:before {
@@ -34,7 +59,7 @@
   }
 
   .greeting-first {
-    padding: 1rem 1rem 0 0.5rem;
+    padding: 1rem 0 0 0.5rem;
   }
   
   .greeting-second {
@@ -51,8 +76,8 @@
   
   .greeting-main p {
     font-size: 1.6rem;
-    margin-left: 2rem;
-    line-height: 1.6;
+    margin-left: 1rem;
+    line-height: 1.4;
   }
 
   .contents-item1 {
