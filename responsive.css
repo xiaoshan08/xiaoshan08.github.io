@@ -1,0 +1,55 @@
+@media (max-width: 670px) {
+  .container {
+    width: 100%;
+  }
+
+  .profile-contents {
+    display: block;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .profile-image img {
+    width: 100%;
+  }
+
+  .profile-text {
+    margin-left: 0;
+  }
+
+  .service-contents {
+    display: block;
+  }
+
+  .work-contents {
+    display: block;
+  }
+
+  input, textarea, select {
+    width: 90%;
+  }
+
+}
+
+/* 671px以上はハンバーガーボタン非表示、ヘッダー固定 */
+@media screen and (min-width: 671px) {
+	.btn {
+		display: none;
+	}
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+		position: fixed;
+		top: 25px;
+		right: 0;
+		width: 50%;
+		height: 40px;
+    background-color: transparent;
+  }
+
+}
