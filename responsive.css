@@ -1,0 +1,38 @@
+@media screen and (max-width: 414px) {
+  
+  .header-nav {
+    width: 60vw;
+  }
+
+  .header-nav.open {
+    left: -60vw;
+  }
+
+  .fv-video {
+    width: 90vw;
+  }
+
+  .text-box {
+    left: 10%;
+  }
+
+  .item-box {
+    flex-basis: 45%;
+  }
+
+  .contact-content {
+    display: block;
+  }
+
+  .contact-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+}
+
+
