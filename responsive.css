@@ -8,12 +8,22 @@
     left: -60vw;
   }
 
-  .fv-video {
-    width: 90vw;
+  .header-logo {
+    width: 70%;
+    padding-top: 10px;
+  }
+
+  .fv-image {
+    width: 100vw;
+    height: 65vh;
   }
 
   .text-box {
     left: 10%;
+  }
+
+  .text-box h1 {
+    font-size: 2.4rem;
   }
 
   .item-box {
