@@ -7,7 +7,7 @@ $(function(){
       $('.burger-musk').fadeToggle(300);
   });
 
-  $('.slider').slick({
+  $('.full-screen').slick({
     autoplay:true, // 自動再生を設定
     autoplaySpeed:2000, // スライド切り替えの時間を設定
     speed: 1000,

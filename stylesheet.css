@@ -221,6 +221,7 @@ li {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 25px;
+  overflow-x: hidden;
 }
 .sliderArea.w300 {
   max-width: 300px;
