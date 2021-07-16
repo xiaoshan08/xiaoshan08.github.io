@@ -8,6 +8,10 @@
     left: -60vw;
   }
 
+  .header {
+    padding: 10px 30px 10px 10px;
+  }
+
   .header-logo {
     width: 70%;
     padding-top: 10px;
