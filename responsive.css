@@ -30,6 +30,16 @@
     flex-basis: 45%;
   }
 
+  .item-box-text h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .item-box-text p {
+    font-size: 1.4rem;
+    font-weight: 100;
+  }
+
   .contact-content {
     display: block;
   }
