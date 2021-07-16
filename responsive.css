@@ -43,6 +43,19 @@
     width: 100%;
   }
 
+  .recruit-text {
+    padding: 10px 0;
+  }
+
+  .recruit-text p {
+    font-size: 1.5rem;
+  }
+
+  table tr th {
+    font-size: 1.5rem;
+  }
+
+
 }
 
 
