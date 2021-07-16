@@ -444,6 +444,10 @@ Recruit Page
   font-weight: 400;
 }
 
+table {
+  width: 100%;
+}
+
 table tr th {
   font-size: 1.8rem;
   line-height: 1.5;
