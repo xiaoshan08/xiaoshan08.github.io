@@ -48,17 +48,19 @@ li {
   color: #fff;
 }
 
-.parallax-bg {
+.parallax-bg::before {
+  content: "";
   background-image: url('img/bg_s.jpg');
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
- 
-/*スクロールするコンテンツ*/
-.scrollbox {
-  background-color: #fff;
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 /*     ↑ 共通部分 ↑     */
@@ -180,6 +182,10 @@ li {
   z-index: 3;
 }
 
+.top-section {
+  background-color: #fff;
+}
+
 .fv-image {
   display: block;
   margin: 0 auto;
@@ -187,22 +193,22 @@ li {
   position: relative;
   width: 80vw;
   height: 90vh;
-  z-index: -1;
+  z-index: 0;
 }
 
 .front-view {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  transform: translate(-50%, -40%)
+  height: 95%;
+  transform: translate(-50%, -47%);
 }
 
 .text-box {
   position: absolute;
   top: 40%;
   left: 25%;
+  z-index: 1;
 }
 
 .text-box h1 {

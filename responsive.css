@@ -1,9 +1,4 @@
 @media screen and (max-width: 414px) {
-  
-  .parallax-bg {
-    background-size: contain;
-    background-repeat: repeat;
-  }
 
   .header-nav {
     width: 60vw;
