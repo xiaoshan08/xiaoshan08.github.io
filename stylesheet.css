@@ -12,14 +12,14 @@ html {
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: 'Meiryo', 'Yu Gothic', sans-serif;
   color: #333;
 }
 
 .container {
-  width: 90%;
-  margin: 10px auto;
+  width: 75%;
+  margin: 0 auto;
 }
 
 img {
@@ -50,7 +50,7 @@ li {
 }
 
 .green {
-  color: green;
+  color: #3cb371;
 }
 
 .dot-green {
@@ -62,7 +62,7 @@ li {
   position: absolute; /* 相対位置とする */
   top: -1em;          /* 縦方向の表示位置を調整（-1emくらいがちょうどいいかんじ） */
   left: 0;            /* 横方向の表示位置を調整 */
-  color: green;
+  color: #3cb371;
 }
 
 .white {
@@ -206,7 +206,7 @@ li {
 }
 
 .title-content {
-  padding: 50px 0 50px 0;
+  padding: 30px 0 50px 0;
   text-align: center;
 }
 
@@ -234,6 +234,27 @@ li {
   background-color: #666666; /*下線の色*/
 }
 
+.trouble {
+  padding: 30px 0;
+  position: relative;
+}
+
+.trouble::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 30px solid #fff;
+  border-right: 60px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 60px solid transparent;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 .trouble-flex {
   display: flex;
   justify-content: space-around;
@@ -244,63 +265,212 @@ li {
 }
 
 .trouble-list {
-  width: 65%;
+  width: 70%;
 }
+
+.trouble-list ul {
+  padding: 5px 0 10px 30px;
+}
+
+.trouble-list ul li {
+  display: inline-block;
+  font-size: 2.4rem;
+  border-bottom: solid 2px red;
+  position: relative;
+  margin: 0 0 15px 20px;
+}
+
+.trouble-list ul li::before {
+  content: "";
+  position: absolute;
+  background-image: url(img/trouble-point.png);
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  top: 0;
+  left: -40px;
+}
+
 
 .solution {
   background-image: url(img/solution-bg.jpg);
+  padding: 30px 0;
 }
 
-
-
-
-.contact {
-  background-color: #121212;
-  padding: 5vh 4vw;
+.solution-list ul {
+  margin: 0 30px;
 }
 
-.contact-content {
+.solution-list ul li {
+  color: #fff;
+  font-size: 2.4rem;
+  position: relative;
+  margin: 0 0 15px 20px;
+}
+
+.solution-list ul li::before {
+  content: "";
+  position: absolute;
+  background-image: url(img/solution-point.png);
+  width: 40px;
+  height: 30px;
+  background-size: cover;
+  top: 5px;
+  left: -45px;
+}
+
+.solution-yellow {
+  color: yellow;
+  border-bottom: solid 2px yellow;
+}
+
+.solution-box {
+  border: solid 8px #1e90ff;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 90%;
+  margin: 30px auto;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.solution-box p {
+  padding: 5px 0;
+}
+
+.solution-box-img {
+  padding: 20px 0;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.support {
+  padding: 30px 0;
+}
+
+.support-text {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.support-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.support-box {
+  width: 17%;
+  margin: 5px;
+}
+
+.support-box-text {
+  text-align: center;
+}
+
+.ability {
+  padding: 30px 0;
+  background-image: url(img/strong-point-bg.jpg);
+  background-size: cover;
+}
+
+.ability-img {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.ability-text {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.ability-text p {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.ability-content {
   display: flex;
   justify-content: space-between;
 }
 
-.contact-text {
-  width: 47%;
-}
-
-.contact-text p {
-  font-size: 1.6rem;
-  letter-spacing: 0.3em;
-  padding: 15px 0;
-}
-
-.contact-form {
-  width: 47%;
-}
-
-.contact-form p {
-  font-size: 1.6rem;
-  padding-bottom: 5px;
-  letter-spacing: 0.3rem;
-}
-
-input, textarea {
-  width: 90%;
-  font-size: 1.6rem;
-  line-height: 1.8;
-  margin-bottom: 20px;
-  padding-left: 5px;
-}
-
-.mailform-submit {
-  -webkit-appearance: none;
+.ability-box {
   width: 30%;
-  text-transform: uppercase;
-  margin: 5px 0;
+  margin: 5px;
+  background-color: #fff;
+}
+
+.ability-box-title {
+  color: #3cb371;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.ability-box-title h2 {
+  font-size: 3.2rem;
+  padding-top: 5px;
+}
+
+.ability-box-text {
+  margin: 0 10px 20px 10px;
+  border-top: solid 4px rgb(170, 170, 170, 0.2);
+}
+
+.ability-box-text p {
+  padding: 10px 0;
+  line-height: 1.8;
+}
+
+.works {
+  padding: 30px 0;
+}
+
+.works-text {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.works-text p {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.voice {
+  padding: 30px 0;
+  background-image: url(img/voice-bg.jpg);
+  background-size: cover;
+}
+
+.about {
   padding: 5px 0;
-  cursor: pointer;
-  border-radius: 10px;
+  background-color: #87cefa;
+}
+
+.about2 {
+  background: linear-gradient(to right, #4169e1, #87ceeb)
+}
+
+.about-content {
+  display: flex;
+  padding: 20px 0;
+}
+
+.about-content-text {
+  width: 70%;
+  padding: 10px;
+}
+
+.about-content-text p {
   color: #fff;
+  padding: 10px 0;
+  line-height: 1.8;
+}
+
+
+.about-content-img {
+  width: 30%;
+  padding: 15px;
 }
 
 footer {
