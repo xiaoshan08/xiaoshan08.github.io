@@ -436,6 +436,30 @@ li {
   line-height: 1.5;
 }
 
+.slider{
+  margin: 20px auto;
+  width: 90%;
+}
+
+/*slick setting*/
+.slider .slick-prev::before, .slider .slick-next::before {
+  font-size: 40px;
+  color: #000;
+}
+
+.slider .slick-prev {
+  left: 10px;   /* デフォルトでは-25px(= スライダーの外側) */
+}
+
+.slider .slick-next {
+  right: 10px; /* デフォルトでは-25px(= スライダーの外側) */
+}
+
+.slider .slick-prev, .slider .slick-next {
+  z-index: 100; /* スライド画像の後ろに隠れないようにする */
+}
+
+
 .voice {
   padding: 30px 0;
   background-image: url(img/voice-bg.jpg);
@@ -899,8 +923,7 @@ input[type="submit"], input[type="button"] {
   display: none;
 }
 
-
-
+/**********************/
 
 .company {
   padding: 30px 0;
