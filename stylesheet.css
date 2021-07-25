@@ -473,6 +473,76 @@ li {
   padding: 15px;
 }
 
+.questions-accordion {
+  margin: 20px auto 50px auto;
+}
+
+.qa-q, .qa-a {
+  font-size: 3rem;
+  padding-right: 10px;
+}
+
+/* ↓↓ お問い合わせアコーディオン部分 ↓↓ */
+.accordion-container {
+  position: relative;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  outline: 0;
+  cursor: pointer
+}
+
+.accordion-container .accordion-title {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0.625em 0.625em 0.625em 2em;
+  font-size: 1.25em;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.accordion-container .accordion-title:hover,
+.accordion-container .accordion-title:active,
+.accordion-container .content-entry.open .accordion-title {
+  background-color: #00aaa7;
+  color: white;
+}
+
+.accordion-title{
+  position: relative;
+}
+
+.accordion-title:after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 38%;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: solid 3px #e5e5e5;
+  border-right: solid 3px #e5e5e5;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.accordion-title.open:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 45%;
+}
+
+.accordion-content {
+  display: none;
+  padding: 0.625em 0.625em 0.625em 2.3125em;
+}
+
+/* ↑↑ お問い合わせアコーディオン部分 ↑↑ */
+
+
+
+
 .contact {
   padding: 30px 0;
   background-color: #f1f1f1;
@@ -494,7 +564,7 @@ li {
   background: #f9f9f9;
 }
 
-.mailform {
+.contact-form {
   padding: 30px;
   color: #222;
   width: 70%;
@@ -825,6 +895,9 @@ input[type="submit"], input[type="button"] {
   margin: 25px 0 0;
 }
 
+.term-accordion-content {
+  display: none;
+}
 
 
 
