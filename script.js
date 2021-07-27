@@ -38,4 +38,32 @@ $(function(){
     slidesToScroll: 3,
   });
 
+  $('.voice-slider').slick({
+    autoplay: false,
+    dots: false,
+    arrows: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+  });
+
+});
+
+// TOPへスクロール ↓↓
+$(function(){
+  var pagetop = $('#page_top');
+  // ボタン非表示
+  pagetop.hide();
+  // 300px スクロールしたらボタン表示
+  $(window).scroll(function () {
+     if ($(this).scrollTop() > 300) {
+          pagetop.fadeIn();
+     } else {
+          pagetop.fadeOut();
+     }
+  });
+  // 1.0秒かけてTOPへ戻る
+  pagetop.click(function () {
+     $('body, html').animate({ scrollTop: 0 }, 1000);
+     return false;
+  });
 });
