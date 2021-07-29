@@ -37,6 +37,16 @@ $(function(){
     arrows: true,
     slidesToShow: 3,
     slidesToScroll: 3,
+
+    //レスポンシブでの動作を指定
+    responsive: [{
+      breakpoint: 414,  //ブレイクポイントを指定
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }]
+
   });
 
   $('.voice-slider').slick({
@@ -45,6 +55,16 @@ $(function(){
     arrows: true,
     slidesToShow: 4,
     slidesToScroll: 4,
+
+    //レスポンシブでの動作を指定
+    responsive: [{
+      breakpoint: 414,  //ブレイクポイントを指定
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    }]
+
   });
 
 });
