@@ -1,5 +1,17 @@
 @media screen and (max-width: 414px) {
   
+  body {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .burger-btn {
+    top: 5px;
+  }
+
   .header-nav {
     width: 60vw;
   }
@@ -8,29 +20,151 @@
     left: -60vw;
   }
 
-  .fv-video {
-    width: 90vw;
+  .header img {
+    width: 70%;
+  }
+
+  .header {
+    padding: 5px 10px;
+  }  
+
+  .fv {
+    background-image: url(img/fv-ti-sp.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: center center;
   }
 
   .text-box {
-    left: 10%;
+    width: 90%;
+    margin-top: 20px;
+    padding: 180px 0;
   }
 
-  .item-box {
-    flex-basis: 45%;
+  .text-box p {
+    display: none;
   }
 
-  .contact-content {
+  .text-box img {
+    display: none;
+  }
+
+  .fv-link {
+    display: none;
+  }
+
+  .title-content h1 {
+    font-size: 3.2rem;
+  }
+
+  .trouble-flex {
     display: block;
   }
 
-  .contact-text {
+  .trouble-img {
     width: 100%;
-    margin-bottom: 20px;
+  }
+
+  .trouble-list {
+    width: 100%;
+  }
+
+  .trouble-list ul li {
+    font-size: 1.8rem;
+  }
+
+  .trouble-list ul li::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .solution-list ul li {
+    font-size: 1.8rem;
+  }
+
+  .solution-list ul li::before {
+    width: 35px;
+    height: 30px;
+  }
+
+  .solution-box {
+    width: 95%;
+  }
+
+  .solution-box-img {
+    width: 90%;
+  }
+
+  .support-content {
+    justify-content: space-around;
+  }
+
+  .support-box {
+    width: 40%;
+  }
+
+  .ability-img {
+    width: 80%;
+  }
+
+  .ability-content {
+    display: block;
+  }
+
+  .ability-box {
+    width: 100%;
+  }
+
+
+  .about-content {
+    flex-wrap: wrap-reverse;
+  }
+
+  .about-content-text {
+    width: 100%;
+  }
+
+  .about-content-img {
+    width: 90%;
+  }
+
+  .qa-q, .qa-a {
+    font-size: 2rem;
+  }
+
+  .accordion-container .accordion-title {
+    font-size: 1.4rem;
+    padding: 0.625em 2em 0.625em 0.625em;
+  }  
+
+  .accordion-content p {
+    font-size: 1.4rem;
   }
 
   .contact-form {
+    padding: 5px 0;
+    width: 97%;
+  }
+
+  .contact table th, .contact table td {
+    display: block;
     width: 100%;
+  }
+
+  .contact table th {
+    padding-left: 5px;
+  }
+
+  .contact table td {
+    padding: 10px 5px 10px 5px;
+  }
+
+  .company-img {
+    width: 30%;
+  }
+
+  .table-box {
+    width: 97%;
   }
 
 }
