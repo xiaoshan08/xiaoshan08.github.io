@@ -492,7 +492,8 @@ li {
 }
 
 .slider{
-  margin: 20px auto;
+  margin: 0 auto;
+  padding: 0 20px;
   width: 90%;
 }
 
@@ -538,7 +539,7 @@ li {
 }
 
 .voice-slider {
-  padding-bottom: 40px;
+  padding: 0 20px 40px 20px;
 }
 
 .slider-box {
