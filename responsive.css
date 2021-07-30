@@ -115,6 +115,10 @@
     width: 100%;
   }
 
+  .vclink span {
+    font-size: 1.2rem;
+  }
+
 
   .about-content {
     flex-wrap: wrap-reverse;
