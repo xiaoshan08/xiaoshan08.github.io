@@ -528,7 +528,7 @@ li {
 }
 
 .slider .slick-prev, .slider .slick-next {
-  z-index: 100; /* スライド画像の後ろに隠れないようにする */
+  z-index: 2; /* スライド画像の後ろに隠れないようにする */
 }
 
 
