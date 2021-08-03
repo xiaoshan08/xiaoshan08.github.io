@@ -72,6 +72,18 @@ li {
 .link-btn {
   position: relative;
   overflow: hidden;
+  background-color: #ff8c00;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.link-btn a {
+  font-size: 3rem;
+  line-height: 2;
+}
+
+.fa-envelope {
+  margin-right: 15px;
 }
 
 .reflection {
